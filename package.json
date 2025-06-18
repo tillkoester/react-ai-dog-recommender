@@ -1,0 +1,42 @@
+{
+  "name": "personal-brand-positioning-quiz",
+  "version": "1.0.0",
+  "description": "Comprehensive Personal Brand Positioning Quiz application with AI-powered market research and regional insights",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install",
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "openai": "^4.20.1",
+    "joi": "^17.11.0",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "nodemailer": "^6.9.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "personal-brand",
+    "quiz",
+    "ai",
+    "market-research",
+    "positioning",
+    "branding"
+  ],
+  "author": "Personal Brand Quiz Team",
+  "license": "MIT"
+}
